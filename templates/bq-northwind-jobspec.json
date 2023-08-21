@@ -20,12 +20,10 @@
         "node": {
           "source": "1k orders",
           "name": "Customer",
-          "active": true,
           "mode": "merge",
           "transform": {
             "group": true
           },
-          "automap": false,
           "mappings": {
             "labels": [
               "\"Customer\""
@@ -47,7 +45,6 @@
         "node": {
           "source": "1k orders",
           "name": "Products",
-          "active": true,
           "mode": "merge",
           "transform": {
             "aggregations": [
@@ -62,9 +59,7 @@
             ],
             "group": true,
             "order_by": "product_name ASC",
-            "limit": -1
           },
-          "automap": false,
           "mappings": {
             "labels": [
               "\"Product\""
